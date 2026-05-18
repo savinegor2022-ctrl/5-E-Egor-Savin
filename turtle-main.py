@@ -11,4 +11,4 @@ right(120)
 forward(50)
 end_fill()
 
-done
+done()

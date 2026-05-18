@@ -33,9 +33,18 @@ args = "Start application"
 name = "Start application"
 author = "agent"
 
-[workflows.workflow.metadata]
-outputType = "vnc"
-
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "/nix/store/g82nfx6adfq9sbb1wf4xcwsdxqrk3pdk-python3-3.12.11/bin/python3 turtle-main.py"
+
+[workflows.workflow.metadata]
+outputType = "vnc"
+
+[[workflows.workflow]]
+name = "Example 1 p 25"
+mode = "sequential"
+author = 55029317
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python example25.1.py"
