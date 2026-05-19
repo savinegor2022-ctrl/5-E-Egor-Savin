@@ -18,7 +18,7 @@ deploymentTarget = "cloudrun"
 expertMode = true
 
 [workflows]
-runButton = "Project"
+runButton = "Параграф 24 приклад 3 "
 
 [[workflows.workflow]]
 name = "Project"
@@ -102,3 +102,12 @@ args = "/nix/store/g82nfx6adfq9sbb1wf4xcwsdxqrk3pdk-python3-3.12.11/bin/python3 
 
 [workflows.workflow.metadata]
 outputType = "vnc"
+
+[[workflows.workflow]]
+name = "Параграф 24 приклад 3 "
+mode = "sequential"
+author = 55029317
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python example24.3.py"
