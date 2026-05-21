@@ -49,6 +49,10 @@ args = "Параграф 24 приклад 2 "
 task = "workflow.run"
 args = "Параграф 24 приклад 3 "
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Вправа 24"
+
 [[workflows.workflow]]
 name = "Start application"
 author = "agent"
@@ -115,6 +119,18 @@ author = "agent"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "/nix/store/g82nfx6adfq9sbb1wf4xcwsdxqrk3pdk-python3-3.12.11/bin/python3 example24.3.py"
+
+[workflows.workflow.metadata]
+outputType = "vnc"
+
+[[workflows.workflow]]
+name = "Вправа 24"
+mode = "sequential"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "/nix/store/g82nfx6adfq9sbb1wf4xcwsdxqrk3pdk-python3-3.12.11/bin/python3 exercise24.py"
 
 [workflows.workflow.metadata]
 outputType = "vnc"
